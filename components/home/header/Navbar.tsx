@@ -3,6 +3,14 @@ import React from "react";
 import { Button } from "../../ui/button";
 import SearchInput from "./search-input";
 import ModeToggle from "./toggle";
+import {
+  SignedIn,
+  SignedOut,
+  SignIn,
+  SignInButton,
+  SignUpButton,
+  UserButton,
+} from "@clerk/nextjs";
 
 const Navbar = () => {
   return (
@@ -54,10 +62,21 @@ const Navbar = () => {
             <div className="flex items-center gap-4">
               <SearchInput />
               <ModeToggle />
-              <div className="hidden md:flex items-center gap-2">
-                <Button>Login</Button>
-                <Button>Signup</Button>
-              </div>
+
+              <SignedIn>
+                <UserButton />
+              </SignedIn>
+
+              <SignedOut>
+                <div className="hidden md:flex items-center gap-2">
+                  <SignInButton>
+                    <Button variant={"outline"}>Login</Button>
+                  </SignInButton>
+                  <SignUpButton>
+                    <Button>Signup</Button>
+                  </SignUpButton>
+                </div>
+              </SignedOut>
             </div>
           </div>
 
