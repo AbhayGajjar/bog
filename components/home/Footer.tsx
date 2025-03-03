@@ -33,14 +33,14 @@ const Footer = () => {
           </div>
           <h2 className="text-lg font-semibold text-primary mt-4">Subscribe</h2>
           <div className="mt-2 flex flex-col sm:flex-row items-center gap-2">
-            <input type="email" placeholder="Enter your email" className="w-full px-3 py-2 border rounded-md dark:bg-black dark:border-gray-700 dark:text-black" />
+            <input type="email" placeholder="Enter your email" className="w-full px-3 py-2 border rounded-md text-black dark:bg-black dark:border-gray-700 dark:text-white" />
             <Button>Subscribe</Button>
           </div>
         </div>
       </div>
       
       {/* Footer Bottom */}
-      <div className="text-center text-sm mt-6 border-t pt-4">© {new Date().getFullYear()} YourBlog. All rights reserved.</div>
+      <div className="text-center text-sm mt-6 border-t pt-4">© {new Date().getFullYear()} NodeNotes. All rights reserved.</div>
     </footer>
   );
 };

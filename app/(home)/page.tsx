@@ -1,4 +1,5 @@
 import CallToAction from "@/components/home/Call-to-Action";
+import Faq from "@/components/home/Faq";
 import FeactureSection from "@/components/home/Feacture-Section";
 import Footer from "@/components/home/Footer";
 import Navbar from "@/components/home/header/Navbar";
@@ -12,6 +13,7 @@ const Home = () => {
       <HeroSection />
       <FeactureSection />
       <CallToAction />
+      <Faq/>
       <Footer />
     </div>
   );

@@ -23,9 +23,9 @@ const Navbar = () => {
             <Link href={"/"} className="flex items-center space-x-2">
               <span className="font-bold text-2xl">
                 <span className="bg-gradient-to-r from-purple-600 to bg-indigo-600 dark:from-purple-300 dark:to-indigo-400 bg-clip-text text-transparent">
-                  Byte
+                  Node
                 </span>
-                <span>Code</span>
+                <span>Notes</span>
               </span>
             </Link>
           </div>
