@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import { Button } from "../../ui/button";
@@ -30,11 +31,13 @@ const Navbar = () => {
           </div>
 
           {/* Desktop menu */}
-          <div className="hidden md:flex items-center gap-4">
-            <div>
+          <div className="hidden md:flex items-center gap-7">
+            <div className="flex gap-7">
               <Link
                 href={"/articles"}
-                className="text-sm font-medium text-foreground transition-colors hover:text-foreground"
+                className={
+                  "text-sm font-medium text-foreground transition-colors hover:text-foreground "
+                }
               >
                 Articles
               </Link>
